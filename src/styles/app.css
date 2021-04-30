@@ -1,0 +1,81 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: teal;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: blue;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.cards div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 20px;
+}
+.cards div p {
+  text-align: center;
+}
+.scoreContainer {
+  display: flex;
+}
+.scoreContainer p {
+  margin: 20px;
+  font-size: larger;
+}
+img {
+  background-color: transparent;
+  height: 100px;
+  width: 100px;
+}
+.footer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  padding: 0.1em 1em;
+  background: #d5d8dc;
+  border: 1px solid #2c3e50;
+  border-radius: 15px;
+  margin: 1em 0.5em 0.5em;
+}
+.footer div {
+  margin: 0.1em 0.2em;
+}
+  
+.footer a {
+  text-decoration: none;
+}
+.footer svg {
+  margin: 0px 0.2em;
+  width: 0.9rem;
+  height: 0.9rem;
+}
+.logo a:hover svg path {
+  fill: #3f51b5;
+}
