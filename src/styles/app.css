@@ -7,8 +7,8 @@ html, body {
 .content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  height: 100vh;
 }
 .header {
   display: flex;
@@ -21,10 +21,14 @@ html, body {
   text-align: center;
 }
 .cards {
+  flex: 1;
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  max-width: 1152px;
   margin-left: 20%;
   margin-right: 20%;
+  margin-bottom: 15%;
 }
 .cards div {
   display: flex;
@@ -33,13 +37,13 @@ html, body {
   align-items: center;
   width: 150px;
   height: 150px;
-  margin: 5px;
   padding: 10px;
   border: 1px solid #000;
   border-radius: 20px;
 }
 .cards div p {
   text-align: center;
+  margin-top: 0;
 }
 .scoreContainer {
   display: flex;
@@ -49,9 +53,9 @@ html, body {
   font-size: larger;
 }
 img {
-  background-color: transparent;
-  height: 100px;
-  width: 100px;
+  background-color: black;
+  height: 150px;
+  width: 150px;
 }
 .footer {
   display: inline-flex;
