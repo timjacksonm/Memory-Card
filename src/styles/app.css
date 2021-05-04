@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -30,16 +31,30 @@ html, body {
   margin-right: 20%;
   margin-bottom: 15%;
 }
-.cards div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.individualCard {
+  position: relative;
   width: 150px;
   height: 150px;
   padding: 10px;
   border: 1px solid #000;
   border-radius: 20px;
+}
+.screenOverCharacters {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: transparent;
+  width: 100%;
+  cursor: pointer;
+  z-index: 1;
+}
+.characterContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .cards div p {
   text-align: center;
@@ -71,7 +86,7 @@ img {
 .footer div {
   margin: 0.1em 0.2em;
 }
-  
+
 .footer a {
   text-decoration: none;
 }
