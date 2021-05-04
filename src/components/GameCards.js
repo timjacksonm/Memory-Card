@@ -35,11 +35,12 @@ function GameCards(props) {
 
   const [characterList, setCharacterList] = useState(getRandomList());
 
-  const clickEvent = (e) => {
+  const handleChoice = (e) => {
+    props.setMasterList((prevState) => {
+      prevState[e.target.id - 1].checked = true;
+      return prevState;
+    });
     setCharacterList(getRandomList());
-    // props.setMasterList((prevState) => {
-    //   prevState[e.target.id - 1].checked = true;
-    // });
   };
 
   console.log(props.masterList);
@@ -50,7 +51,7 @@ function GameCards(props) {
           <div key={id} className='individualCard'>
             <span
               className='screenOverCharacters'
-              onClick={clickEvent}
+              onClick={handleChoice}
               id={id}
             ></span>
             <div className='characterContainer'>
