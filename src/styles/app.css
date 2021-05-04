@@ -67,10 +67,9 @@ body {
   margin: 20px;
   font-size: larger;
 }
-img {
-  background-color: black;
-  height: 150px;
-  width: 150px;
+input {
+  height: 100px;
+  width: 100px;
 }
 .footer {
   display: inline-flex;

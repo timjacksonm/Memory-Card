@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import characters from './Characters';
 
 function GameCards(props) {
   const getRandomList = () => {
@@ -26,10 +25,10 @@ function GameCards(props) {
     const scrambledList = [];
 
     for (let i = 0; i < randomIDs.length; i++) {
-      const value = props.masterList.find(
+      const object = props.masterList.find(
         (object) => object.id === randomIDs[i]
       );
-      scrambledList.push(value);
+      scrambledList.push(object);
     }
     return scrambledList;
   };
@@ -37,11 +36,13 @@ function GameCards(props) {
   const [characterList, setCharacterList] = useState(getRandomList());
 
   const clickEvent = (e) => {
-    const num = e.target.id;
-    props.masterList[num - 1].checked = true;
     setCharacterList(getRandomList());
+    // props.setMasterList((prevState) => {
+    //   prevState[e.target.id - 1].checked = true;
+    // });
   };
 
+  console.log(props.masterList);
   return (
     <div className='cards'>
       {characterList.map(({ id, src, name }) => {

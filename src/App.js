@@ -7,7 +7,6 @@ import Footer from './components/Footer';
 import './styles/app.css';
 
 function App() {
-  const defaultList = characters;
   const [masterList, setMasterList] = useState(characters);
   const [charLimit, setCharLimit] = useState(12);
 
@@ -17,7 +16,7 @@ function App() {
       <ScoreBoard />
       <GameCards
         masterList={masterList}
-        state={setMasterList}
+        setMasterList={setMasterList}
         charLimit={charLimit}
       />
       <Footer />
