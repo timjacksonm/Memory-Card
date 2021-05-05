@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import characters from './Characters';
 
 function GameCards(props) {
   const getRandomList = () => {
@@ -35,25 +36,45 @@ function GameCards(props) {
 
   const [characterList, setCharacterList] = useState(getRandomList());
 
-  const handleChoice = (e) => {
-    props.setMasterList((prevState) => {
-      prevState[e.target.id - 1].checked = true;
-      return prevState;
-    });
-    setCharacterList(getRandomList());
-  };
+  useEffect(() => {
+    const updateScore = () => {
+      const verifyCount = props.masterList.filter(
+        (object) => object.checked === true
+      );
+      props.setCurrentScore(verifyCount.length);
+    };
 
-  console.log(props.masterList);
+    const handleChoice = (e) => {
+      if (props.masterList[e.target.id].checked) {
+        //set best score, reset currentScore, reset all checked.
+        props.setBestScore(props.currentScore);
+      } else {
+        //add checked true, set current score & create new random list.
+        props.setMasterList((prevState) => {
+          prevState[e.target.id - 1].checked = true;
+          return prevState;
+        });
+        setCharacterList(getRandomList());
+        updateScore();
+      }
+    };
+
+    document
+      .querySelectorAll('span')
+      .forEach((span) => span.addEventListener('click', handleChoice));
+    return () => {
+      document
+        .querySelectorAll('span')
+        .forEach((span) => span.removeEventListener('click', handleChoice));
+    };
+  }, [characterList]);
+
   return (
     <div className='cards'>
       {characterList.map(({ id, src, name }) => {
         return (
           <div key={id} className='individualCard'>
-            <span
-              className='screenOverCharacters'
-              onClick={handleChoice}
-              id={id}
-            ></span>
+            <span className='screenOverCharacters' id={id}></span>
             <div className='characterContainer'>
               <input
                 src={process.env.PUBLIC_URL + src}

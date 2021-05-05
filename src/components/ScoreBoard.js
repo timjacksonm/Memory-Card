@@ -1,12 +1,10 @@
-import React from 'react';
-
-function ScoreBoard() {
+function ScoreBoard(props) {
   return (
     <div className='scoreContainer'>
       <p>Current Score</p>
-      <p>{'#'}</p>
+      <p>{props.currentScore}</p>
       <p>Best Score</p>
-      <p>{'#'}</p>
+      <p>{props.bestScore}</p>
     </div>
   );
 }

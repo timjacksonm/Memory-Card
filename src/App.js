@@ -9,15 +9,24 @@ import './styles/app.css';
 function App() {
   const [masterList, setMasterList] = useState(characters);
   const [charLimit, setCharLimit] = useState(12);
+  const [currentScore, setCurrentScore] = useState(0);
+  const [bestScore, setBestScore] = useState(0);
 
   return (
     <div className='content'>
       <Title />
-      <ScoreBoard />
+      <ScoreBoard
+        masterList={masterList}
+        currentScore={currentScore}
+        bestScore={bestScore}
+      />
       <GameCards
         masterList={masterList}
         setMasterList={setMasterList}
         charLimit={charLimit}
+        currentScore={currentScore}
+        setCurrentScore={setCurrentScore}
+        setBestScore={setBestScore}
       />
       <Footer />
     </div>
