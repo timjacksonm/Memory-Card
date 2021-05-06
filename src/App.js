@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import characters from './components/Characters';
 import Title from './components/Title';
 import ScoreBoard from './components/ScoreBoard';
@@ -25,6 +25,7 @@ function App() {
         setMasterList={setMasterList}
         charLimit={charLimit}
         currentScore={currentScore}
+        bestScore={bestScore}
         setCurrentScore={setCurrentScore}
         setBestScore={setBestScore}
       />
