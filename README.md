@@ -2,7 +2,7 @@
   <image src="#" width="50%"> 
 </h1>
 
-<h4 align="center">Memory Card Game. Created using characters from a childhood favorite game Crash Team Racing! I used React, HTML, CSS, JavaScript for this project.</h4>
+<h4 align="center">Memory Card Game. Created using characters from Crash Team Racing! I used React, HTML, CSS, JavaScript for this project.</h4>
 
 <p align="center">
   <a href="#screenshots">Screenshots</a> •
@@ -31,22 +31,20 @@ The next couple images show responsive web design for multiple devices.
 
 ## Goals:
 
-- [] 
-- [] 
-- [] 
-- [] 
-- [] 
-- [] 
+- [] Plan out how you are going to implement your application, which components you need and structure.
+- [] Add a counter for current score and best score.
+- [] Use react hooks in your app.
+- [] Style your project!
 
 **Optional Extra Credit**
 
-- [] 
+- [] To be decided.
 
 **View Commits on project to see changes**
 
 ## Summary
 
-To be written.
+Memory card game! I drew inspiration for the characters from one of my favorite racing games 'Crash Team Racing'. I focused on using what I learned about react hooks and implementing them into this project. I created my own Characters.js component which houses all my character data that I use throughout my app.
 
 ## Author
 
@@ -59,6 +57,10 @@ To be written.
 ## Credits
 
 This project idea was a part of my studies at The Odin Project's curriculum. You can see the lesson <a href="https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/memory-card" target="_blank">here</a>!
+
+Images used for each character were from this wiki.
+https://crashbandicoot.fandom.com/wiki/Crash_Team_Racing_Nitro-Fueled#Characters
+their licensing info <a href="https://www.fandom.com/licensing" target="_blank">here</a>.
 
 ## License
 
