@@ -58,8 +58,8 @@ Memory card game! I drew inspiration for the characters from one of my favorite 
 
 This project idea was a part of my studies at The Odin Project's curriculum. You can see the lesson <a href="https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript/lessons/memory-card" target="_blank">here</a>!
 
-Images used for each character were from this wiki.
-https://crashbandicoot.fandom.com/wiki/Crash_Team_Racing_Nitro-Fueled#Characters
+Images used for each character were from this <a href="https://crashbandicoot.fandom.com/wiki/Crash_Team_Racing_Nitro-Fueled#Characters" target="_blank">wiki</a>.
+
 their licensing info <a href="https://www.fandom.com/licensing" target="_blank">here</a>.
 
 ## License
