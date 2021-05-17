@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Memory-Card/static/css/main.7029769c.chunk.css",
+    "main.js": "/Memory-Card/static/js/main.b54ce019.chunk.js",
+    "main.js.map": "/Memory-Card/static/js/main.b54ce019.chunk.js.map",
+    "runtime-main.js": "/Memory-Card/static/js/runtime-main.5e43af9d.js",
+    "runtime-main.js.map": "/Memory-Card/static/js/runtime-main.5e43af9d.js.map",
+    "static/js/2.42c88f8f.chunk.js": "/Memory-Card/static/js/2.42c88f8f.chunk.js",
+    "static/js/2.42c88f8f.chunk.js.map": "/Memory-Card/static/js/2.42c88f8f.chunk.js.map",
+    "index.html": "/Memory-Card/index.html",
+    "static/css/main.7029769c.chunk.css.map": "/Memory-Card/static/css/main.7029769c.chunk.css.map",
+    "static/js/2.42c88f8f.chunk.js.LICENSE.txt": "/Memory-Card/static/js/2.42c88f8f.chunk.js.LICENSE.txt",
+    "static/media/app.css": "/Memory-Card/static/media/crash-a-like.0f4d94a3.ttf",
+    "static/media/github-icon.04ed74f3.svg": "/Memory-Card/static/media/github-icon.04ed74f3.svg",
+    "static/media/twitter.740c588f.svg": "/Memory-Card/static/media/twitter.740c588f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5e43af9d.js",
+    "static/js/2.42c88f8f.chunk.js",
+    "static/css/main.7029769c.chunk.css",
+    "static/js/main.b54ce019.chunk.js"
+  ]
+}
