@@ -1,5 +1,6 @@
 <h1 align="center">
-  <image src="#" width="50%"> 
+   <image src="src/assets/title.png" width="100%"> 
+  <image src="src/assets/CTRCrashTitleImg.png" width="30%"> 
 </h1>
 
 <h4 align="center">Memory Card Game. Created using characters from Crash Team Racing! I used React, HTML, CSS, JavaScript for this project.</h4>
@@ -44,7 +45,7 @@ The next couple images show responsive web design for multiple devices.
 
 ## Summary
 
-Memory card game! I drew inspiration for the characters from one of my favorite racing games 'Crash Team Racing'. I focused on using what I learned about react hooks and implementing them into this project. I created my own Characters.js component which houses all my character data that I use throughout my app instead of using an API. Hardest part for me was figuring out how to update the state of my characterList. It is an array of 55 objects (characters). I did mess around with tailwind some but decided as I had already coded most of the styling in raw css and wanted to just finish. Overall I am happy with the outcome I hope you enjoy!
+Memory card game! I drew inspiration for the characters from one of my favorite racing games 'Crash Team Racing'. I focused on using what I learned about react hooks and implementing them into this project. I created my own Characters.js component which houses all my character data that I use throughout my app instead of using an API. Hardest part for me was figuring out how to update the state of my characterList. It is an array of 55 objects (characters). I did mess around with tailwindcss some but decided not to use it as I had already coded most of the styling in raw css. Overall I am happy with the outcome I hope you enjoy!
 
 ## Author
 
