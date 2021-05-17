@@ -21,7 +21,7 @@
 <details>
   <summary>Show Image</summary>
 
-<image src="src/assets/demogif.mp4">
+<image src="src/assets/demogif.gif">
 
 The next couple images show a screenshot for different devices.
 
