@@ -40,7 +40,7 @@ function GameCards(props) {
               ></span>
               <div className='characterContainer'>
                 <input
-                  src={process.env.PUBLIC_URL + src}
+                  src={`${process.env.PUBLIC_URL}${src}`}
                   alt={'image of ' + name}
                   type='image'
                 />
