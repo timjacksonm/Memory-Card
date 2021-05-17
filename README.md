@@ -21,13 +21,12 @@
 <details>
   <summary>Show Image</summary>
 
-<image src="#">
+<image src="src/assets/demoGif.gif">
 
-The next couple images show responsive web design for multiple devices.
+The next couple images show a screenshot for different devices.
 
-<image src="#">
-<image src="#">
-<image src="#">
+<image src="src/assets/iphone678.png">
+<image src="src/assets/ipad.png">
 </details>
 
 ## Goals:
@@ -36,10 +35,6 @@ The next couple images show responsive web design for multiple devices.
 - [✔️] Add a counter for current score and best score.
 - [✔️] Use react hooks in your app.
 - [✔️] Style your project!
-
-**Optional Extra Credit**
-
-- []
 
 **View Commits on project to see changes**
 
