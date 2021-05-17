@@ -13,7 +13,7 @@
   <a href="#license">License</a>
 </p>
 
-### ✨ [Live Preview](#)
+### ✨ [Live Preview](https://timjacksonm.github.io/Memory-Card/)
 
 ## Screenshots
 
@@ -34,7 +34,7 @@ The next couple images show responsive web design for multiple devices.
 - [✔️] Plan out how you are going to implement your application, which components you need and structure.
 - [✔️] Add a counter for current score and best score.
 - [✔️] Use react hooks in your app.
-- [] Style your project!
+- [✔️] Style your project!
 
 **Optional Extra Credit**
 
@@ -44,7 +44,7 @@ The next couple images show responsive web design for multiple devices.
 
 ## Summary
 
-Memory card game! I drew inspiration for the characters from one of my favorite racing games 'Crash Team Racing'. I focused on using what I learned about react hooks and implementing them into this project. I created my own Characters.js component which houses all my character data that I use throughout my app.
+Memory card game! I drew inspiration for the characters from one of my favorite racing games 'Crash Team Racing'. I focused on using what I learned about react hooks and implementing them into this project. I created my own Characters.js component which houses all my character data that I use throughout my app instead of using an API. Hardest part for me was figuring out how to update the state of my characterList. It is an array of 55 objects (characters). I did mess around with tailwind some but decided as I had already coded most of the styling in raw css and wanted to just finish. Overall I am happy with the outcome I hope you enjoy!
 
 ## Author
 
