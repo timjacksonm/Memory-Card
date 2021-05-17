@@ -1,9 +1,16 @@
+@font-face {
+  font-family: CrashFont;
+  src: url(../assets/crash-a-like.ttf);
+}
 html,
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: teal;
+  background: linear-gradient(to top, #768cdb 33%, #008b8b 100%);
+  color: #dfdb84;
+  font-size: 22px;
+  text-shadow: 3px 5px #000;
 }
 .content {
   display: flex;
@@ -16,23 +23,28 @@ body {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  background-color: blue;
+  background-color: #ff6522;
   width: 100%;
   height: 100px;
   text-align: center;
+  font-family: CrashFont;
+  letter-spacing: 2px;
+}
+.main {
+  padding: 0;
+  flex: 1;
+  overflow: auto;
 }
 .cards {
-  flex: 1;
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   max-width: 1152px;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-bottom: 15%;
 }
 .individualCard {
   position: relative;
+  margin: 10px;
   width: 150px;
   height: 150px;
   padding: 10px;
@@ -58,14 +70,30 @@ body {
 }
 .cards div p {
   text-align: center;
-  margin-top: 0;
+  margin-top: 1px;
+  font-size: 18px;
+  text-shadow: 5px 5px 5px #000;
 }
 .scoreContainer {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  border-top: 3px solid #000;
+  font-family: CrashFont;
+  letter-spacing: 2px;
 }
 .scoreContainer p {
-  margin: 20px;
   font-size: larger;
+  color: #000;
+  text-shadow: none;
+}
+.score {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #dfdb84 !important;
+  text-shadow: 2px 2px 1px#000 !important;
 }
 input {
   height: 100px;
@@ -76,6 +104,9 @@ input {
   align-items: center;
   justify-content: center;
   font-size: 12px;
+  text-shadow: none;
+  color: #000;
+  font-weight: 500;
   padding: 0.1em 1em;
   background: #d5d8dc;
   border: 1px solid #2c3e50;
@@ -95,5 +126,5 @@ input {
   height: 0.9rem;
 }
 .logo a:hover svg path {
-  fill: #3f51b5;
+  fill: #ff6522;
 }

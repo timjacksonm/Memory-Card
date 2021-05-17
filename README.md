@@ -31,14 +31,14 @@ The next couple images show responsive web design for multiple devices.
 
 ## Goals:
 
-- [] Plan out how you are going to implement your application, which components you need and structure.
-- [] Add a counter for current score and best score.
-- [] Use react hooks in your app.
+- [✔️] Plan out how you are going to implement your application, which components you need and structure.
+- [✔️] Add a counter for current score and best score.
+- [✔️] Use react hooks in your app.
 - [] Style your project!
 
 **Optional Extra Credit**
 
-- [] To be decided.
+- []
 
 **View Commits on project to see changes**
 

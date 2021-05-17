@@ -28,26 +28,28 @@ function GameCards(props) {
   };
 
   return (
-    <div className='cards'>
-      {props.characterList.map(({ id, src, name }) => {
-        return (
-          <div key={id} className='individualCard'>
-            <span
-              onClick={handleChoice}
-              className='screenOverCharacters'
-              id={id}
-            ></span>
-            <div className='characterContainer'>
-              <input
-                src={process.env.PUBLIC_URL + src}
-                alt={'image of ' + name}
-                type='image'
-              />
-              <p>{name}</p>
+    <div className='main'>
+      <div className='cards'>
+        {props.characterList.map(({ id, src, name }) => {
+          return (
+            <div key={id} className='individualCard'>
+              <span
+                onClick={handleChoice}
+                className='screenOverCharacters'
+                id={id}
+              ></span>
+              <div className='characterContainer'>
+                <input
+                  src={process.env.PUBLIC_URL + src}
+                  alt={'image of ' + name}
+                  type='image'
+                />
+                <p>{name}</p>
+              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </div>
   );
 }
