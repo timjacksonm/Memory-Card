@@ -267,6 +267,7 @@ const characters = [
     id: 45,
     src: '/img/Real Velo.webp',
     name: 'Real Velo',
+    checked: false,
   },
   {
     id: 46,

@@ -43,7 +43,6 @@ function App() {
   };
 
   const [characterList, setCharacterList] = useState(getRandomList);
-
   return (
     <div className='content'>
       <Title />

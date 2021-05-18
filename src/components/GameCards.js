@@ -17,12 +17,12 @@ function GameCards(props) {
       //add checked true, set current score & create new random list.
       props.setMasterList((prevState) => {
         prevState[e.target.id - 1].checked = true;
+        const verifyCount = props.masterList.filter(
+          (object) => object.checked === true
+        );
+        props.setCurrentScore(verifyCount.length);
         return prevState;
       });
-      const verifyCount = props.masterList.filter(
-        (object) => object.checked === true
-      );
-      props.setCurrentScore(verifyCount.length);
     }
     props.setCharacterList(props.getRandomList());
   };
