@@ -13,6 +13,7 @@ function GameCards(props) {
         });
         return defaultList;
       });
+      props.setCharacterList(props.getRandomList());
     } else {
       //add checked true, set current score & create new random list.
       props.setMasterList((prevState) => {
@@ -23,8 +24,8 @@ function GameCards(props) {
         props.setCurrentScore(verifyCount.length);
         return prevState;
       });
+      props.setCharacterList(props.getRandomList());
     }
-    props.setCharacterList(props.getRandomList());
   };
 
   return (

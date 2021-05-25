@@ -29,11 +29,20 @@ body {
   text-align: center;
   font-family: CrashFont;
   letter-spacing: 2px;
+  border-bottom: 3px solid #000;
 }
 .main {
   padding: 0;
   flex: 1;
   overflow: auto;
+}
+.announcement {
+  font-size: 28px;
+  font-family: CrashFont;
+  letter-spacing: 2px;
+  font-style: normal;
+  color: #dfdb84;
+  text-shadow: 2px 2px #000;
 }
 .cards {
   display: flex;
@@ -80,7 +89,6 @@ body {
   align-items: center;
   text-align: center;
   width: 100%;
-  border-top: 3px solid #000;
   font-family: CrashFont;
   letter-spacing: 2px;
 }

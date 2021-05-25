@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import characters from './components/Characters';
 import Title from './components/Title';
 import ScoreBoard from './components/ScoreBoard';
 import GameCards from './components/GameCards';
 import Footer from './components/Footer';
+import Confetti from './components/Fireworks';
 import './styles/app.css';
 
 function App() {
@@ -11,6 +12,8 @@ function App() {
   const [masterList, setMasterList] = useState(characters);
   const [currentScore, setCurrentScore] = useState(0);
   const [bestScore, setBestScore] = useState(0);
+  const [confettiMount, setConfettiMount] = useState(false);
+  const [announcementContent, setAnnouncementContent] = useState(null);
 
   const getRandomList = () => {
     const randomIDs = [];
@@ -43,10 +46,27 @@ function App() {
   };
 
   const [characterList, setCharacterList] = useState(getRandomList);
+
+  useEffect(() => {
+    if (bestScore !== 0) {
+      setConfettiMount(true);
+      setAnnouncementContent(() => {
+        return <div className={'announcement'}>New Best Score!</div>;
+      });
+      setTimeout(function () {
+        setConfettiMount(false);
+        setAnnouncementContent(null);
+      }, 7500);
+    }
+  }, [bestScore]);
+
   return (
     <div className='content'>
+      {confettiMount ? <Confetti /> : null}
       <Title />
+      {announcementContent}
       <ScoreBoard currentScore={currentScore} bestScore={bestScore} />
+
       <GameCards
         masterList={masterList}
         characterList={characterList}
@@ -58,6 +78,7 @@ function App() {
         setBestScore={setBestScore}
         getRandomList={getRandomList}
       />
+
       <Footer />
     </div>
   );
