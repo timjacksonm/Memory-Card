@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Memory-Card/static/css/main.44714f52.chunk.css",
+    "main.css": "/Memory-Card/static/css/main.d1feb32d.chunk.css",
     "main.js": "/Memory-Card/static/js/main.a499de8f.chunk.js",
     "main.js.map": "/Memory-Card/static/js/main.a499de8f.chunk.js.map",
     "runtime-main.js": "/Memory-Card/static/js/runtime-main.5e43af9d.js",
@@ -8,7 +8,7 @@
     "static/js/2.ac008649.chunk.js": "/Memory-Card/static/js/2.ac008649.chunk.js",
     "static/js/2.ac008649.chunk.js.map": "/Memory-Card/static/js/2.ac008649.chunk.js.map",
     "index.html": "/Memory-Card/index.html",
-    "static/css/main.44714f52.chunk.css.map": "/Memory-Card/static/css/main.44714f52.chunk.css.map",
+    "static/css/main.d1feb32d.chunk.css.map": "/Memory-Card/static/css/main.d1feb32d.chunk.css.map",
     "static/js/2.ac008649.chunk.js.LICENSE.txt": "/Memory-Card/static/js/2.ac008649.chunk.js.LICENSE.txt",
     "static/media/app.css": "/Memory-Card/static/media/crash-a-like.0f4d94a3.ttf",
     "static/media/github-icon.04ed74f3.svg": "/Memory-Card/static/media/github-icon.04ed74f3.svg",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.5e43af9d.js",
     "static/js/2.ac008649.chunk.js",
-    "static/css/main.44714f52.chunk.css",
+    "static/css/main.d1feb32d.chunk.css",
     "static/js/main.a499de8f.chunk.js"
   ]
 }
