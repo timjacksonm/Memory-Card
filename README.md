@@ -25,8 +25,16 @@
 
 The next couple images show a screenshot for different devices.
 
+---
+
 <image src="src/assets/iphone678.png">
+
+---
+
 <image src="src/assets/ipad.png">
+
+---
+ 
 </details>
 
 ## Goals:
