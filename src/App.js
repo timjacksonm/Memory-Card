@@ -61,8 +61,8 @@ function App() {
   }, [bestScore]);
 
   return (
-    <div className='content'>
-      {confettiMount ? <Confetti /> : null}
+    <div className="content">
+      {confettiMount && <Confetti />}
       <Title />
       {announcementContent}
       <ScoreBoard currentScore={currentScore} bestScore={bestScore} />

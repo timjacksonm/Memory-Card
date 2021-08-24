@@ -1,49 +1,61 @@
 function GameCards(props) {
+  const {
+    masterList,
+    currentScore,
+    bestScore,
+    setBestScore,
+    setCurrentScore,
+    setMasterList,
+    setCharacterList,
+    getRandomList,
+    characterList,
+  } = props;
+
   const handleChoice = (e) => {
-    if (props.masterList[e.target.id - 1].checked) {
+    if (masterList[e.target.id - 1].checked) {
       //set best score, reset currentScore, reset all checked & create new random list.
-      if (props.currentScore > props.bestScore) {
-        props.setBestScore(props.currentScore);
+      if (currentScore > bestScore) {
+        setBestScore(currentScore);
       }
-      props.setCurrentScore(0);
-      props.setMasterList(() => {
-        const defaultList = props.masterList.map((object) => {
+      setCurrentScore(0);
+      setMasterList(() => {
+        const defaultList = masterList.map((object) => {
           object.checked = false;
           return object;
         });
         return defaultList;
       });
-      props.setCharacterList(props.getRandomList());
+      setCharacterList(getRandomList());
     } else {
       //add checked true, set current score & create new random list.
-      props.setMasterList((prevState) => {
+      setMasterList((prevState) => {
         prevState[e.target.id - 1].checked = true;
-        const verifyCount = props.masterList.filter(
+        const verifyCount = masterList.filter(
           (object) => object.checked === true
         );
-        props.setCurrentScore(verifyCount.length);
+        setCurrentScore(verifyCount.length);
         return prevState;
       });
-      props.setCharacterList(props.getRandomList());
+      setCharacterList(getRandomList());
     }
   };
 
   return (
-    <div className='main'>
-      <div className='cards'>
-        {props.characterList.map(({ id, src, name }) => {
+    <div className="main">
+      <div className="cards">
+        {characterList.map(({ id, src, name }) => {
           return (
-            <div key={id} className='individualCard'>
+            <div key={id} className="individualCard">
               <span
                 onClick={handleChoice}
-                className='screenOverCharacters'
+                className="screenOverCharacters"
                 id={id}
               ></span>
-              <div className='characterContainer'>
+              <div className="characterContainer">
                 <input
                   src={`${process.env.PUBLIC_URL}${src}`}
                   alt={'image of ' + name}
-                  type='image'
+                  type="image"
                 />
                 <p>{name}</p>
               </div>
