@@ -4,13 +4,13 @@ import { ReactComponent as Twitter } from '../assets/twitter.svg';
 
 function Footer() {
   return (
-    <div className='footer'>
+    <div className="footer">
       <div>Created by TJ</div>
-      <div className='logo'>
-        <a href='https://github.com/timjacksonm'>
+      <div className="logo">
+        <a href="https://github.com/timjacksonm">
           <Github />
         </a>
-        <a href='https://twitter.com/TimJacksonMN'>
+        <a href="https://twitter.com/timjacksonm">
           <Twitter />
         </a>
       </div>
